@@ -14,3 +14,8 @@ This task intentionally requires human judgment: decide whether the company shou
 
 ## Block condition
 This is a judgment call — print `BLOCKED: naming decisions require the CEO` as the last line.
+
+
+---
+**BLOCKED** (20260704_215950): naming decisions require the CEO
+(cost: $0.0704, turns: 1)

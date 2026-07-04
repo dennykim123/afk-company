@@ -14,3 +14,8 @@ Print `DONE: <count> department example files` as the last line.
 
 ## Block condition
 If the directory cannot be read, print `BLOCKED: <reason>`.
+
+
+---
+**DONE** (20260704_212606): 3 department example files
+(cost: $0.1134, turns: 2)

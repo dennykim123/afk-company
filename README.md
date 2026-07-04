@@ -39,6 +39,24 @@ afk-company starts from the failure modes of leaving one alone:
 - **Tier 2 — drafts only**: email replies, applications, proposals. Files get created; **the send button is never automated**
 - **Tier 3 — forbidden**: payments, contracts, outbound sends, deploys. Enforced by the tool whitelist, not by the prompt. Prompts can be talked around; a tool that isn't there can't be used
 
+## FUSION model routing (v0.5)
+
+Away-from-keyboard cost control isn't just a spend ceiling — it's sending each task to the cheapest model that can do it. Grounded in [Cognition's Devin Fusion measurements](https://cognition.com/blog/devin-fusion): mechanical work delegates down with quality held (-62% on test runs); judgment work degrades when delegated.
+
+| Task | Default model | Why |
+|---|---|---|
+| `tier: 1` (deterministic, verifiable) | `haiku` | measurement-class work — cheap models do it flawlessly |
+| `tier: 2` (drafts for human review) | `sonnet` | production-class writing, a human approves it anyway |
+| explicit `model:` in frontmatter | whatever you wrote | the contract always wins |
+
+Every run's model lands in `logs/spend_ledger.jsonl`, so you can audit the routing's real savings from your phone:
+
+```bash
+jq -r '[.model, .cost_usd] | @tsv' logs/spend_ledger.jsonl | sort | awk '{s[$1]+=$2} END {for (m in s) print m, s[m]}'
+```
+
+Configure defaults in `company.json` → `"tier_models": {"1": "haiku", "2": "sonnet"}`.
+
 ## Quick start
 
 ```bash
@@ -59,6 +77,7 @@ One task = one markdown file. The frontmatter is its employment contract:
 id: nightly-batch
 tier: 1
 schedule: daily          # once | daily | weekly
+model: haiku             # optional — omitted? tier decides (see FUSION routing)
 allowed_tools: "Read,Write,Bash(python3 *)"   # physically cannot use anything else
 max_turns: 40
 timeout_minutes: 60

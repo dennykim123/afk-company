@@ -1,6 +1,7 @@
 ---
 id: nightly-batch
 tier: 1
+model: haiku
 schedule: daily
 workdir: ~/projects/my-pipeline
 allowed_tools: "Read,Write,Glob,Grep,Bash(python3 *),Bash(ls *)"

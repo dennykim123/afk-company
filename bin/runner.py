@@ -99,13 +99,14 @@ def today_spend_usd() -> float:
     return total
 
 
-def record_spend(task_id: str, cost_usd: float, turns: int) -> None:
+def record_spend(task_id: str, cost_usd: float, turns: int, model: str = "") -> None:
     rec = {
         "date": datetime.now().date().isoformat(),
         "ts": datetime.now().isoformat(timespec="seconds"),
         "task": task_id,
         "cost_usd": round(cost_usd, 4),
         "turns": turns,
+        "model": model or "default",
     }
     with open(SPEND_LEDGER, "a", encoding="utf-8") as f:
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
@@ -224,6 +225,15 @@ def main() -> int:
     timeout_s = int(meta.get("timeout_minutes", CONFIG.get("default_timeout_minutes", 45))) * 60
     allowed = meta.get("allowed_tools", CONFIG.get("default_allowed_tools", "Read,Grep,Glob"))
 
+    # FUSION routing (v0.5): mechanical work goes to the cheapest capable model.
+    # Precedence: explicit frontmatter `model:` > tier default > CLI default.
+    # Grounding: Cognition's Devin Fusion measurements — mechanical work delegates
+    # down with quality held; judgment does not. Tier 1 (deterministic, verifiable)
+    # maps to the mechanical tier; tier 2 (drafts) maps to production.
+    tier = str(meta.get("tier", "")).strip()
+    tier_models = CONFIG.get("tier_models", {"1": "haiku", "2": "sonnet"})
+    model = str(meta.get("model") or tier_models.get(tier, CONFIG.get("default_model", ""))).strip()
+
     # 3. move to running (recurring tasks stay in pending; we work on a copy)
     if schedule == "once":
         running = TASKS / "running" / task_file.name
@@ -250,8 +260,10 @@ def main() -> int:
         "--allowedTools", allowed,
         "--output-format", "json",
     ]
+    if model:
+        cmd += ["--model", model]
     workdir = Path(os.path.expanduser(meta.get("workdir", str(ROOT)))).resolve()
-    log(f"executing {task_id} (tools={allowed}, max_turns={max_turns}, cwd={workdir})")
+    log(f"executing {task_id} (model={model or 'default'}, tools={allowed}, max_turns={max_turns}, cwd={workdir})")
 
     verdict, summary, cost, turns = "blocked", "unknown failure", 0.0, 0
     raw_out = ""
@@ -280,7 +292,7 @@ def main() -> int:
     except FileNotFoundError:
         summary = "claude CLI not found — run doctor.py"
 
-    record_spend(task_id, cost, turns)
+    record_spend(task_id, cost, turns, model)
 
     # 5. route result
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")

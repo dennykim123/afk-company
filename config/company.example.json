@@ -8,5 +8,10 @@
   "stale_running_minutes": 180,
   "runner_interval_minutes": 30,
   "telegram_token": "",
-  "telegram_chat_id": ""
+  "telegram_chat_id": "",
+  "default_model": "",
+  "tier_models": {
+    "1": "haiku",
+    "2": "sonnet"
+  }
 }

@@ -45,10 +45,13 @@ if [ -n "${TOKEN:-}" ]; then
 fi
 
 # 3. launchd registration
+# launchd does not inherit your shell PATH — inject the directory where the
+# claude CLI actually lives, or the runner silently fails to find it.
+CLAUDE_DIR="$(dirname "$(command -v claude || echo /usr/local/bin/claude)")"
 for name in runner report telegram; do
   src="$ROOT/config/com.afkcompany.$name.plist"
   dst="$AGENTS/com.afkcompany.$name.plist"
-  sed "s|__AFK_ROOT__|$ROOT|g" "$src" > "$dst"
+  sed -e "s|__AFK_ROOT__|$ROOT|g" -e "s|__CLAUDE_DIR__|$CLAUDE_DIR|g" "$src" > "$dst"
   launchctl unload "$dst" 2>/dev/null || true
   launchctl load "$dst"
 done

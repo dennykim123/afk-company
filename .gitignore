@@ -1,0 +1,10 @@
+logs/*.log
+logs/*.out
+logs/*.err
+logs/*.out.txt
+logs/heartbeat
+logs/spend_ledger.jsonl
+config/company.json
+config/company.local.json
+.DS_Store
+__pycache__/

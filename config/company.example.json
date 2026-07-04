@@ -1,0 +1,12 @@
+{
+  "company_name": "afk-company",
+  "claude_bin": "claude",
+  "daily_budget_usd": 10.0,
+  "default_max_turns": 25,
+  "default_timeout_minutes": 45,
+  "default_allowed_tools": "Read,Grep,Glob",
+  "stale_running_minutes": 180,
+  "runner_interval_minutes": 30,
+  "telegram_token": "",
+  "telegram_chat_id": ""
+}

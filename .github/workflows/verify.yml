@@ -1,0 +1,9 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  behavior-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run verification suite (mock claude)
+        run: ./verify.sh

@@ -8,3 +8,4 @@ config/company.json
 config/company.local.json
 .DS_Store
 __pycache__/
+config/sites.txt

@@ -2,12 +2,28 @@
 # afk-company verification suite — behavior tests with a mock claude binary
 set -u
 cd "$(dirname "$0")"
+
+# ── SANDBOX: never touch the live install ────────────────────────────
+# Tests mutate tasks/, logs/, config/company.json and make git commits.
+# Running them in the live repo once contaminated a real deployment
+# (fake claude_bin left in config, test commits pushed to the public
+# remote, live task files wiped). Everything below runs in a throwaway
+# copy with its own git repo and NO remote.
+SRC="$PWD"
+SANDBOX="$(mktemp -d /tmp/afk-verify.XXXXXX)"
+trap 'rm -rf "$SANDBOX"' EXIT
+cp -R "$SRC/bin" "$SRC/departments" "$SRC/docs" "$SANDBOX/" 2>/dev/null
+mkdir -p "$SANDBOX"/tasks/pending "$SANDBOX"/tasks/running "$SANDBOX"/tasks/done \
+         "$SANDBOX"/tasks/blocked "$SANDBOX"/logs "$SANDBOX"/config
+cp "$SRC/config/company.example.json" "$SANDBOX/config/company.json"
+cd "$SANDBOX"
+# ─────────────────────────────────────────────────────────────────────
+
 PASS=0; FAIL=0
 ok()   { echo "  ✅ $1"; PASS=$((PASS+1)); }
 bad()  { echo "  ❌ $1"; FAIL=$((FAIL+1)); }
 
-[ -f config/company.json ] || cp config/company.example.json config/company.json
-FAKE=/tmp/fakebin; mkdir -p $FAKE
+FAKE=$SANDBOX/fakebin; mkdir -p $FAKE
 reset() {
   rm -rf tasks/pending/*.md tasks/running/*.md tasks/done/*.md tasks/blocked/*.md \
          logs/spend_ledger.jsonl logs/heartbeat logs/*.out.txt 2>/dev/null
@@ -81,7 +97,7 @@ echo "$out" | grep -q "idle" && ok "re-run within 20h skipped" || bad "daily dou
 echo "── 6. stale running auto-recovery"
 reset; mktask t6 once
 mv tasks/pending/t6.md tasks/running/t6.md
-touch -d "4 hours ago" tasks/running/t6.md 2>/dev/null || touch -t $(date -d "-4 hours" +%Y%m%d%H%M) tasks/running/t6.md
+touch -d "4 hours ago" tasks/running/t6.md 2>/dev/null || touch -t "$(date -v-4H +%Y%m%d%H%M 2>/dev/null || date -d "-4 hours" +%Y%m%d%H%M)" tasks/running/t6.md
 set_claude 'echo "{\"result\":\"DONE: recovered and finished\",\"total_cost_usd\":0.01,\"num_turns\":1}"'
 python3 bin/runner.py >/dev/null 2>&1
 [ -n "$(ls tasks/done/t6__*.md 2>/dev/null)" ] && ok "dead running recovered → re-run" || bad "stale recovery"

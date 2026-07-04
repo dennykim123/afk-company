@@ -95,6 +95,10 @@ timeout_minutes: 60
 3. Telegram *is* the command channel: `/status`, `/approve <id>`, `/reject <id> [why]`, `/task <anything>` to hire a new task from your phone, `/budget <usd>`
 4. GitHub mobile remains the fallback approval desk (edit files in `tasks/blocked/`)
 
+## This repo runs itself
+
+Since 2026-07-04 this repository is a **live afk-company instance**: a launchd runner on a Mac mini picks up the task files you see in `tasks/`, executes them on a schedule, and commits every state change here. The commit history *is* the operational record — `run start:` / `done:` / `blocked:` messages are written by the runner, not by a human. (One early lesson is already in the history: the test suite once contaminated the live install, which is why `verify.sh` now runs fully sandboxed.)
+
 ## Honest limitations
 
 - Two months of **fully** unattended operation is not a real thing. OAuth expires, CLIs update, machines reboot. The goal isn't "zero-touch" — it's **shrinking management to 5 minutes a day from a phone**.

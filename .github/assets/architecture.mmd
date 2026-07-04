@@ -1,0 +1,19 @@
+flowchart LR
+    subgraph YOU["You — other side of the planet"]
+        PHONE["Phone, 5 min/day<br/>Telegram report + approve buttons"]
+    end
+    subgraph REPO["GitHub repo = the company"]
+        P["tasks/pending/"] --> RUN["tasks/running/"]
+        RUN -->|"last line DONE:"| D["tasks/done/"]
+        RUN -->|"last line BLOCKED:"| B["tasks/blocked/<br/>approval queue"]
+    end
+    subgraph MAC["Mac mini, launchd every 30 min"]
+        R["runner.py<br/>budget gate → pick oldest task"]
+        C["claude -p<br/>tool whitelist (tier 1/2/3)"]
+        R --> C
+    end
+    PHONE -->|"/approve /reject /task"| REPO
+    B -->|"push notification<br/>[approve] [reject]"| PHONE
+    R --> P
+    C --> RUN
+    MAC -->|"every state change<br/>= git commit"| REPO

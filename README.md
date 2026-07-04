@@ -1,23 +1,23 @@
+<p align="center">
+  <img src=".github/assets/hero.jpg" alt="afk-company — the office keeps running while the chair is empty" width="100%">
+</p>
+
 # 🏢 afk-company
 
 > **A one-person company that keeps running while the CEO is away for two months.**
 
 [한국어 README](README.ko.md)
 
+Write a task file. Check `doctor.py` says ✅. Board your flight. **Your company clocks in every 30 minutes without you** — and the only thing it ever asks of you is a tap on [approve].
+
 This is **not** another multi-agent orchestration framework. It's the opposite: a minimal, **absence-first** unattended operations stack on top of Claude Code. Every design decision starts from one question — *what breaks when you're not there?*
 
-```
-You (other side of the planet, phone only)
- │  5 min/day: read one Telegram report, approve blocked items
- ▼
-GitHub repo  ←──  the company's ledger, approval desk, and sync channel
- ▲
- │  every 30 min
-Mac mini (launchd) ── runner.py ── claude -p (tool whitelist)
-                          │
-              tasks/pending → running → done
-                                └─────→ blocked  ← "needs a human" is a feature, not a failure
-```
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/architecture-dark.svg">
+  <img src=".github/assets/architecture.svg" alt="afk-company architecture: phone approvals, GitHub repo as the company, launchd runner with tool whitelist" width="95%">
+</picture>
+</p>
 
 ## Why this is different
 

@@ -180,8 +180,15 @@ def is_due(meta: dict, task_file: Path) -> bool:
     if not stamps:
         return True
     last = datetime.fromtimestamp(stamps[-1].stat().st_mtime)
-    gap = {"daily": timedelta(hours=20), "weekly": timedelta(days=6, hours=12)}.get(schedule)
-    return gap is not None and datetime.now() - last >= gap
+    now = datetime.now()
+    # Calendar semantics, not rolling gaps: a 20h gap made run times drift
+    # ~4h/day and occasionally fired a "daily" task twice in one calendar day
+    # (observed 2026-07-09: 03:05 and 23:06 — double spend).
+    if schedule == "daily":
+        return last.date() < now.date()
+    if schedule == "weekly":
+        return last.isocalendar()[:2] < now.isocalendar()[:2]
+    return False
 
 
 def pick_task() -> Path | None:

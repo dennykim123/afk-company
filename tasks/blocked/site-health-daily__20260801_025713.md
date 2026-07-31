@@ -15,3 +15,8 @@ If every URL returns 200, print `DONE: <N>/<N> sites healthy` as the last line.
 
 ## Block condition
 If any URL is not 200, print `BLOCKED: <url> returned <code>` (first failing URL) as the last line.
+
+
+---
+**BLOCKED** (20260801_025713): https://launchmap.vercel.app/ returned 402
+(cost: $0.0998, turns: 7)

@@ -31,3 +31,8 @@ Print `DONE: crawl new=<n> proposed=<p> rejected=<r>` as the last line.
 
 ## Block condition
 If the crawler script fails or queue.json is unreadable, print `BLOCKED: <reason>` as the last line.
+
+
+---
+**DONE** (20260816_011047): crawl new=4 proposed=3 rejected=1
+(cost: $1.6327, turns: 32)

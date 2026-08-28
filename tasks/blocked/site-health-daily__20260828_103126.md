@@ -15,3 +15,8 @@ If every URL returns 200, print `DONE: <N>/<N> sites healthy` as the last line.
 
 ## Block condition
 If any URL is not 200, print `BLOCKED: <url> returned <code>` (first failing URL) as the last line.
+
+
+---
+**BLOCKED** (20260828_103126): no verdict marker (exit 1)
+(cost: $0.0000, turns: 1)

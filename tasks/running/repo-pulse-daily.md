@@ -1,0 +1,17 @@
+---
+id: repo-pulse-daily
+tier: 1
+schedule: daily
+allowed_tools: "Bash(gh *)"
+max_turns: 10
+timeout_minutes: 8
+---
+# What to do
+Using the gh CLI, fetch the current stargazer count for these public repos:
+dennykim123/self-evolving-claude-md, dennykim123/afk-company, dennykim123/launchmap
+
+## Done condition
+Print `DONE: stars sec=<n1> afk=<n2> lm=<n3>` as the last line.
+
+## Block condition
+If gh is unauthenticated or a repo is missing, print `BLOCKED: <reason>`.

@@ -1,0 +1,13 @@
+[     680ms] [LOG] JQMIGRATE: Migrate is installed, version 1.4.1 @ https://arbiter-hacks-v1.devpost.com/:41
+[     706ms] [WARNING] We would like to inform Cookie Control users that IAB has announced the end of support for TCFv1.1 at the end of March 2020. Full support for IAB TCFv2.0 and CCPA will be included in Cookie Control v9.0, which all users will be eligible to download for free once it is released. Customers who use the IAB functionality are strongly advised to plan for this upgrade as soon as possible. For more information, please visit https://www.civicuk.com @ https://arbiter-hacks-v1.devpost.com/:41
+[     729ms] TypeError: Unhandled Promise Rejection: Cannot read properties of undefined (reading 'toString')
+    at n.w (https://arbiter-hacks-v1.devpost.com/:42:64026)
+    at https://arbiter-hacks-v1.devpost.com/:42:5764
+    at Array.forEach (<anonymous>)
+    at Object.emit (https://arbiter-hacks-v1.devpost.com/:42:5750)
+    at Object.emit (https://arbiter-hacks-v1.devpost.com/:42:5722)
+    at e.<computed> (https://arbiter-hacks-v1.devpost.com/:42:57843)
+    at https://js.honeybadger.io/v6.12/honeybadger.min.js:1:35452
+    at https://assets.devpost.com/packs/js/hackathon_recommendation-a7df6ed195cba5b9b778.js:2:87862
+    at l (https://assets.devpost.com/packs/js/hackathon_recommendation-a7df6ed195cba5b9b778.js:2:82403)
+    at Generator._invoke (https://assets.devpost.com/packs/js/hackathon_recommendation-a7df6ed195cba5b9b778.js:2:82156)

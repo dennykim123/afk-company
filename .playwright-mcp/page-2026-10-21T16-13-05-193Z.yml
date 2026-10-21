@@ -1,0 +1,503 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - text:                   
+    - navigation [ref=f9e4]:
+      - list [ref=f9e5]:
+        - listitem [ref=f9e6]:
+          - link [ref=f9e8] [cursor=pointer]:
+            - /url: https://devpost.com
+            - img "Devpost" [ref=f9e9]
+      - generic:
+        - list [ref=f9e10]:
+          - listitem [ref=f9e11]
+          - listitem [ref=f9e12]:
+            - link "Join a hackathon" [ref=f9e13] [cursor=pointer]:
+              - /url: "#"
+              - text: Join a hackathon
+              - generic [aria-hidden] [ref=f9e14]: 
+              - text: 
+            - text:   
+          - listitem [ref=f9e15]
+          - listitem [ref=f9e16]:
+            - link "Host a hackathon" [ref=f9e17] [cursor=pointer]:
+              - /url: "#"
+              - text: Host a hackathon
+              - generic [aria-hidden] [ref=f9e18]: 
+              - text: 
+            - text:      
+          - listitem [ref=f9e19]
+          - listitem [ref=f9e20]:
+            - link "Resources" [ref=f9e21] [cursor=pointer]:
+              - /url: "#"
+              - text: Resources
+              - generic [aria-hidden] [ref=f9e22]: 
+              - text: 
+        - generic [ref=f9e23]:
+          - list:
+            - listitem [ref=f9e24]:
+              - generic [aria-hidden] [ref=f9e26]: 
+            - text:  
+          - list:
+            - listitem [ref=f9e27]:
+              - link "Log in" [ref=f9e28] [cursor=pointer]:
+                - /url: https://secure.devpost.com/users/login?ref=top-nav-login
+            - listitem [ref=f9e29]:
+              - link "Sign up" [ref=f9e30] [cursor=pointer]:
+                - /url: https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button
+  - text: 
+  - banner [ref=f9e32]:
+    - heading [level=1] [ref=f9e35]:
+      - link [ref=f9e36] [cursor=pointer]:
+        - /url: https://arbiter-hacks-v1.devpost.com/
+        - img "Arbiter Hacks V1" [ref=f9e37]
+    - navigation [ref=f9e41]:
+      - list [ref=f9e42]:
+        - listitem [ref=f9e43]:
+          - link "Overview" [ref=f9e44] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/
+        - listitem [ref=f9e45]:
+          - link "My projects" [ref=f9e46] [cursor=pointer]:
+            - /url: https://devpost.com/submit-to/30789-arbiter-hacks-v1/manage/submissions
+        - listitem [ref=f9e47]:
+          - link "Participants (425)" [ref=f9e48] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/participants
+        - listitem [ref=f9e49]:
+          - link "Rules" [ref=f9e50] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/rules
+        - listitem [ref=f9e51]:
+          - link "Project gallery" [ref=f9e52] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/project-gallery
+        - listitem [ref=f9e53]:
+          - link "Updates" [ref=f9e54] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/updates
+        - listitem [ref=f9e55]:
+          - link "Discussions" [ref=f9e56] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/forum_topics
+  - generic [ref=f9e58]:
+    - generic [ref=f9e59]:
+      - heading "Arbiter Hacks V1" [level=1] [ref=f9e60]
+      - heading "Open innovation for all, submit projects that have potential impact and usability!" [level=3] [ref=f9e61]
+      - generic [ref=f9e62]:
+        - link "Join hackathon" [ref=f9e66] [cursor=pointer]:
+          - /url: https://arbiter-hacks-v1.devpost.com/register?flow%5Bdata%5D%5Bchallenge_id%5D=30789&flow%5Bname%5D=register_for_challenge
+        - generic [ref=f9e67]:
+          - heading "Who can participate" [level=6] [ref=f9e68]
+          - list [ref=f9e69]:
+            - listitem [ref=f9e70]: "- Ages 13+ only"
+            - listitem [ref=f9e71]: "- Students only"
+            - listitem [ref=f9e72]: "- Companies/professional organizations excluded from participation"
+            - listitem [ref=f9e73]:
+              - text: "- All countries/territories, excluding"
+              - generic "Brazil, Crimea, Cuba, Iran, North Korea, Quebec, Russia" [ref=f9e74]:
+                - text: standard exceptions
+                - generic [aria-hidden] [ref=f9e75]: 
+          - link "View full rules" [ref=f9e77] [cursor=pointer]:
+            - /url: /rules
+    - generic [ref=f9e79]:
+      - generic [ref=f9e80]:
+        - generic [ref=f9e81]:
+          - paragraph [ref=f9e83]:
+            - time [ref=f9e84]: 2 more months
+            - text: to deadline
+          - paragraph [ref=f9e85]:
+            - link "View schedule" [ref=f9e86] [cursor=pointer]:
+              - /url: https://arbiter-hacks-v1.devpost.com/details/dates
+        - generic [ref=f9e87]:
+          - generic [ref=f9e88]:
+            - paragraph [ref=f9e89]: Deadline
+            - text: 2026년 12월 21일 @ 2:00pm
+            - link "GMT+9" [ref=f9e90] [cursor=pointer]:
+              - /url: https://devpost.com/settings/preferences_and_eligibility#eligibility-section
+              - text: GMT+9
+              - generic [aria-hidden] [ref=f9e91]: 
+          - generic [ref=f9e92] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f9e93]: 
+            - text:   
+      - table [ref=f9e95]:
+        - rowgroup [ref=f9e96]:
+          - row [ref=f9e97]:
+            - cell "Online" [ref=f9e98]:
+              - generic [ref=f9e99]:
+                - generic [aria-hidden] [ref=f9e100]: 
+                - generic [ref=f9e101]: Online
+            - cell "Public" [ref=f9e102]:
+              - generic [ref=f9e103]:
+                - generic [aria-hidden] [ref=f9e104]: 
+                - generic [ref=f9e105]: Public
+          - row [ref=f9e106]:
+            - cell [ref=f9e107]:
+              - link "$7,800 in cash" [ref=f9e108] [cursor=pointer]:
+                - /url: "#prizes"
+                - strong [ref=f9e109]:
+                  - generic [ref=f9e110]: $7,800
+                - text: in cash
+            - cell [ref=f9e111]:
+              - strong [ref=f9e112]: "425"
+              - text: participants
+      - generic [ref=f9e113]:
+        - generic [ref=f9e114]:
+          - generic [aria-hidden] [ref=f9e115]: 
+          - link "Arbiter" [ref=f9e117] [cursor=pointer]:
+            - /url: https://devpost.com/hackathons?organization=Arbiter+
+        - generic [ref=f9e119]:
+          - generic [aria-hidden] [ref=f9e120]: 
+          - generic [ref=f9e121]:
+            - link "Beginner Friendly" [ref=f9e122] [cursor=pointer]:
+              - /url: https://devpost.com/hackathons?themes%5B%5D=Beginner+Friendly
+            - link "Machine Learning/AI" [ref=f9e124] [cursor=pointer]:
+              - /url: https://devpost.com/hackathons?themes%5B%5D=Machine+Learning%2FAI
+            - link "Open Ended" [ref=f9e126] [cursor=pointer]:
+              - /url: https://devpost.com/hackathons?themes%5B%5D=Open+Ended
+  - main [ref=f9e132]:
+    - generic [ref=f9e133]:
+      - generic [ref=f9e134]:
+        - article [ref=f9e135]:
+          - paragraph [ref=f9e136]:
+            - text: "Remember: Join the"
+            - link "Discord" [ref=f9e137] [cursor=pointer]:
+              - /url: https://discord.gg/bMbhhDrqe
+            - text: for announcments!
+          - paragraph [ref=f9e138]:
+            - strong [ref=f9e139]: About the challenge
+          - paragraph [ref=f9e140]: Arbiter Hacks V1 runs two parallel tracks. Pick one when you register, or switch before the submission deadline. You may only submit to one track.
+          - paragraph [ref=f9e141]:
+            - strong [ref=f9e142]: "General Track:"
+            - text: Build anything. Any language, any stack, any idea. This track rewards technical ambition and execution, regardless of subject.
+          - paragraph [ref=f9e143]:
+            - strong [ref=f9e144]: "Theme Track, Rethinking Waste:"
+            - text: Build something that helps people or systems reduce, sort, or recycle waste more effectively. Examples include a tool that identifies whether an item is recyclable, an app that routes food waste to donation, a hardware or vision system that sorts materials, or a dataset or model that improves recycling accuracy. If it moves the needle on waste, it fits.
+          - paragraph [ref=f9e145]: The tracks are judged separately, against separate rubrics, for separate prizes. A polished General submission and a high-impact Theme submission compete only within their own track.
+          - paragraph [ref=f9e146]:
+            - strong [ref=f9e147]: Get started
+          - list [ref=f9e148]:
+            - listitem [ref=f9e149]: Register and pick a track.
+            - listitem [ref=f9e150]: Form a team of [1 to 4] or go solo.
+            - listitem [ref=f9e151]: Late submissions are not judged.
+        - article [ref=f9e152]:
+          - heading "Requirements" [level=3] [ref=f9e154]
+          - generic [ref=f9e156]:
+            - paragraph [ref=f9e157]:
+              - strong [ref=f9e158]: What to Build
+            - paragraph [ref=f9e159]:
+              - emphasis [ref=f9e160]: "General Track:"
+              - text: Any working software or hardware project. No topic restriction.
+            - paragraph [ref=f9e161]:
+              - emphasis [ref=f9e162]: "Theme Track:"
+              - text: A project whose primary purpose addresses waste reduction, sorting, or recycling. Judges will check that the theme is central to the project, not bolted on. A to-do app with a "recycling" label is a General project, not a Theme one.
+            - paragraph [ref=f9e163]:
+              - strong [ref=f9e164]: What to Submit
+            - paragraph [ref=f9e165]: "Every submission must include:"
+            - list [ref=f9e166]:
+              - listitem [ref=f9e167]: A public code repository (GitHub, GitLab, or equivalent).
+              - listitem [ref=f9e168]: A demo video, [2 to 3] minutes max, showing the project working. Upload to YouTube or Vimeo and link it.
+              - listitem [ref=f9e169]: "A written description: what it does, how you built it, and what you'd do next."
+              - listitem [ref=f9e170]: "Theme Track only: one paragraph stating the specific waste problem you targeted and how you'd measure whether it worked."
+            - paragraph [ref=f9e171]
+            - paragraph [ref=f9e172]: Missing the repo or the video makes a submission ineligible.
+        - article [ref=f9e173]:
+          - heading "Prizes" [level=3] [ref=f9e175]
+          - generic [ref=f9e179]:
+            - generic [ref=f9e180]: $7,800
+            - text: in prizes
+          - generic [ref=f9e181]:
+            - generic [ref=f9e182]:
+              - heading "⋆ 1st Place General" [level=6] [ref=f9e183]:
+                - generic [ref=f9e184]:
+                  - generic [ref=f9e185]: ⋆
+                  - generic [ref=f9e186]: 1st Place General
+              - generic [ref=f9e187]:
+                - generic [ref=f9e188]:
+                  - generic [ref=f9e189]: $2,100
+                  - text: in cash
+                - generic [ref=f9e190]: 1 winner
+                - paragraph [ref=f9e191]: Earn 100 Dollars Cash Adaption Credits ($1000) Deployxa Credits ($1000)
+            - generic [ref=f9e192]:
+              - heading "⋆ 1st Place Theme" [level=6] [ref=f9e193]:
+                - generic [ref=f9e194]:
+                  - generic [ref=f9e195]: ⋆
+                  - generic [ref=f9e196]: 1st Place Theme
+              - generic [ref=f9e197]:
+                - generic [ref=f9e198]:
+                  - generic [ref=f9e199]: $2,100
+                  - text: in cash
+                - generic [ref=f9e200]: 1 winner
+                - paragraph [ref=f9e201]: Earn 100 Dollars Cash Adaption Credits ($1000) Deployxa Credits ($1000)
+          - generic [ref=f9e202]:
+            - generic [ref=f9e203]:
+              - heading "⋆ 2nd Place General" [level=6] [ref=f9e204]:
+                - generic [ref=f9e205]:
+                  - generic [ref=f9e206]: ⋆
+                  - generic [ref=f9e207]: 2nd Place General
+              - generic [ref=f9e208]:
+                - generic [ref=f9e209]:
+                  - generic [ref=f9e210]: $1,550
+                  - text: in cash
+                - generic [ref=f9e211]: 1 winner
+                - paragraph [ref=f9e212]: Earn 50 Dollars Cash Adaption Credits ($1000) Deployxa Credits ($500)
+            - generic [ref=f9e213]:
+              - heading "⋆ 2nd Place Theme" [level=6] [ref=f9e214]:
+                - generic [ref=f9e215]:
+                  - generic [ref=f9e216]: ⋆
+                  - generic [ref=f9e217]: 2nd Place Theme
+              - generic [ref=f9e218]:
+                - generic [ref=f9e219]:
+                  - generic [ref=f9e220]: $1,550
+                  - text: in cash
+                - generic [ref=f9e221]: 1 winner
+                - paragraph [ref=f9e222]: Earn 50 Dollars Cash Adaption Credits ($1000) Deployxa Credits ($500)
+          - generic [ref=f9e224]:
+            - heading "⋆ Participation Prize" [level=6] [ref=f9e225]:
+              - generic [ref=f9e226]:
+                - generic [ref=f9e227]: ⋆
+                - generic [ref=f9e228]: Participation Prize
+            - generic [ref=f9e229]:
+              - generic [ref=f9e230]:
+                - generic [ref=f9e231]: $500
+                - text: in cash
+              - generic [ref=f9e232]: 1 winner
+              - paragraph [ref=f9e233]: Adaption Credits ($500)
+        - article [ref=f9e234]:
+          - heading "Judges" [level=3] [ref=f9e236]
+          - generic [ref=f9e238]:
+            - generic [ref=f9e240]:
+              - figure [ref=f9e242]:
+                - img "Aaryav Lal" [ref=f9e243]
+              - paragraph [ref=f9e245]:
+                - strong [ref=f9e246]: Aaryav Lal
+                - text: AXEIS
+            - generic [ref=f9e248]:
+              - figure [ref=f9e250]:
+                - img "Gayathri Chilukala" [ref=f9e251]
+              - paragraph [ref=f9e253]:
+                - strong [ref=f9e254]: Gayathri Chilukala
+                - text: Microsoft
+          - generic [ref=f9e255]:
+            - generic [ref=f9e257]:
+              - figure [ref=f9e259]:
+                - img "Sudheer Kumar Pratap" [ref=f9e260]
+              - paragraph [ref=f9e262]:
+                - strong [ref=f9e263]: Sudheer Kumar Pratap
+                - text: U.S. Bank
+            - generic [ref=f9e265]:
+              - figure [ref=f9e267]:
+                - img "Aditya Shrivastava" [ref=f9e268]
+              - paragraph [ref=f9e270]:
+                - strong [ref=f9e271]: Aditya Shrivastava
+                - text: Barclays
+          - generic [ref=f9e272]:
+            - generic [ref=f9e274]:
+              - figure [ref=f9e276]:
+                - img "Suman Debnath" [ref=f9e277]
+              - paragraph [ref=f9e279]:
+                - strong [ref=f9e280]: Suman Debnath
+                - text: Crusoe
+            - generic [ref=f9e282]:
+              - figure [ref=f9e284]:
+                - img "Fenil Shah" [ref=f9e285]
+              - paragraph [ref=f9e287]:
+                - strong [ref=f9e288]: Fenil Shah
+                - text: Amazon
+          - generic [ref=f9e289]:
+            - generic [ref=f9e291]:
+              - figure [ref=f9e293]:
+                - img "Nikhil Singh" [ref=f9e294]
+              - paragraph [ref=f9e296]:
+                - strong [ref=f9e297]: Nikhil Singh
+                - text: U.S. Bank
+            - generic [ref=f9e299]:
+              - figure [ref=f9e301]:
+                - img "Sharath Chandra Kampili" [ref=f9e302]
+              - paragraph [ref=f9e304]:
+                - strong [ref=f9e305]: Sharath Chandra Kampili
+                - text: Cockroach Labs
+          - generic [ref=f9e306]:
+            - generic [ref=f9e308]:
+              - figure [ref=f9e310]:
+                - img "Anudeep Bonagiri" [ref=f9e311]
+              - paragraph [ref=f9e313]:
+                - strong [ref=f9e314]: Anudeep Bonagiri
+                - text: Cruze
+            - generic [ref=f9e316]:
+              - figure [ref=f9e318]:
+                - img "Sachin Gurjar" [ref=f9e319]
+              - paragraph [ref=f9e321]:
+                - strong [ref=f9e322]: Sachin Gurjar
+                - text: Apexlayer Technologies
+          - generic [ref=f9e323]:
+            - generic [ref=f9e325]:
+              - figure [ref=f9e327]:
+                - img "Doshi" [ref=f9e328]
+              - paragraph [ref=f9e330]:
+                - strong [ref=f9e331]: Doshi
+                - text: Apple
+            - generic [ref=f9e333]:
+              - figure [ref=f9e335]:
+                - img "Allan Dabre" [ref=f9e336]
+              - paragraph [ref=f9e338]:
+                - strong [ref=f9e339]: Allan Dabre
+                - text: PWC
+          - generic [ref=f9e340]:
+            - generic [ref=f9e342]:
+              - figure [ref=f9e344]:
+                - img "Bhargav K Korrapati" [ref=f9e345]
+              - paragraph [ref=f9e347]:
+                - strong [ref=f9e348]: Bhargav K Korrapati
+                - text: Gateway Solutions Inc.
+            - generic [ref=f9e350]:
+              - figure [ref=f9e352]:
+                - img "Aishwarya Kannoth Putlumbath" [ref=f9e353]
+              - paragraph [ref=f9e355]:
+                - strong [ref=f9e356]: Aishwarya Kannoth Putlumbath
+                - text: AMD
+          - generic [ref=f9e359]:
+            - figure [ref=f9e361]:
+              - img "Tanya Kapoor" [ref=f9e362]
+            - paragraph [ref=f9e364]:
+              - strong [ref=f9e365]: Tanya Kapoor
+              - text: Sheladia Associates, Inc.
+        - article [ref=f9e366]:
+          - heading "Judging Criteria" [level=3] [ref=f9e368]
+          - list [ref=f9e370]:
+            - listitem [ref=f9e371]:
+              - strong [ref=f9e372]: Technical Execution (General)
+              - text: Code quality, working functionality, and the difficulty of what was built. Weighted 35%.
+            - listitem [ref=f9e373]:
+              - strong [ref=f9e374]: Innovation & Originality
+              - text: How novel the idea or approach is. Weighted 25%.
+            - listitem [ref=f9e375]:
+              - strong [ref=f9e376]: Completeness & Polish (General)
+              - text: How finished the project is. Rough edges, broken features, and unfinished flows lose points. Weighted 25%.
+            - listitem [ref=f9e377]:
+              - strong [ref=f9e378]: Presentation & Demo Clarity (General)
+              - text: How clearly the demo video and writeup explain what was built. Weighted 15%.
+            - listitem [ref=f9e379]:
+              - strong [ref=f9e380]: Impact on Waste Problem (Theme)
+              - text: How meaningfully the project reduces, sorts, or improves recycling of waste. The theme must be central, not bolted on. Weighted 35%.
+            - listitem [ref=f9e381]:
+              - strong [ref=f9e382]: Technical Execution (Theme)
+              - text: Code quality, working functionality, and the difficulty of what was built. Weighted 25%.
+            - listitem [ref=f9e383]:
+              - strong [ref=f9e384]: Feasibility (Theme)
+              - text: Could this actually be deployed in the real world? A working solution beats a clever one that can't ship. Weighted 20%.
+            - listitem [ref=f9e385]:
+              - strong [ref=f9e386]: Presentation & Demo Clarity (Theme)
+              - text: How clearly the demo video and writeup explain what was built. Weighted 20%.
+      - generic [ref=f9e387]:
+        - paragraph [ref=f9e390]:
+          - text: Questions?
+          - link "Email the hackathon manager" [ref=f9e391] [cursor=pointer]:
+            - /url: mailto:aaryavlal12@gmail.com
+        - article [ref=f9e392]:
+          - heading "Hackathon sponsors" [level=3] [ref=f9e393]
+          - link [ref=f9e394] [cursor=pointer]:
+            - /url: https://www.axeis.org/
+            - img "AXEIS" [ref=f9e395]
+          - link [ref=f9e396] [cursor=pointer]:
+            - /url: https://opencodingsociety.com/
+            - img "Open Coding Scoiety" [ref=f9e397]
+          - link [ref=f9e398] [cursor=pointer]:
+            - /url: https://sbztechnology.com/
+            - img "SBZ Technology" [ref=f9e399]
+          - link [ref=f9e400] [cursor=pointer]:
+            - /url: https://coremindstutor.org/
+            - img "Core Minds" [ref=f9e401]
+          - link [ref=f9e402] [cursor=pointer]:
+            - /url: https://adaptionlabs.ai/
+            - img "adaption" [ref=f9e403]
+          - link [ref=f9e404] [cursor=pointer]:
+            - /url: https://deployxa.com/
+            - img "Deployxa" [ref=f9e405]
+        - paragraph [ref=f9e407]:
+          - text: This site is protected by reCAPTCHA and the Google
+          - link "Privacy Policy" [ref=f9e408] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy
+          - text: and
+          - link "Terms of Service" [ref=f9e409] [cursor=pointer]:
+            - /url: https://policies.google.com/terms
+          - text: apply.
+  - contentinfo [ref=f9e410]:
+    - generic [ref=f9e411]:
+      - navigation [ref=f9e413]:
+        - heading "Devpost" [level=4] [ref=f9e414]
+        - list [ref=f9e415]:
+          - listitem [ref=f9e416]:
+            - link "About" [ref=f9e417] [cursor=pointer]:
+              - /url: https://info.devpost.com/about
+          - listitem [ref=f9e418]:
+            - link "Careers" [ref=f9e419] [cursor=pointer]:
+              - /url: https://info.devpost.com/careers
+          - listitem [ref=f9e420]:
+            - link "Contact" [ref=f9e421] [cursor=pointer]:
+              - /url: https://info.devpost.com/contact
+          - listitem [ref=f9e422]:
+            - link "Help" [ref=f9e423] [cursor=pointer]:
+              - /url: https://help.devpost.com/
+      - navigation [ref=f9e425]:
+        - heading "Hackathons" [level=4] [ref=f9e426]
+        - list [ref=f9e427]:
+          - listitem [ref=f9e428]:
+            - link "Browse hackathons" [ref=f9e429] [cursor=pointer]:
+              - /url: https://devpost.com/hackathons
+          - listitem [ref=f9e430]:
+            - link "Explore projects" [ref=f9e431] [cursor=pointer]:
+              - /url: https://devpost.com/software
+          - listitem [ref=f9e432]:
+            - link "Host a hackathon" [ref=f9e433] [cursor=pointer]:
+              - /url: https://info.devpost.com
+          - listitem [ref=f9e434]:
+            - link "Hackathon guides" [ref=f9e435] [cursor=pointer]:
+              - /url: https://info.devpost.com/guides
+      - navigation [ref=f9e437]:
+        - heading "Portfolio" [level=4] [ref=f9e438]
+        - list [ref=f9e439]:
+          - listitem [ref=f9e440]:
+            - link "Your projects" [ref=f9e441] [cursor=pointer]:
+              - /url: https://devpost.com/portfolio/redirect?page=projects
+          - listitem [ref=f9e442]:
+            - link "Your hackathons" [ref=f9e443] [cursor=pointer]:
+              - /url: https://devpost.com/portfolio/redirect?page=hackathons
+          - listitem [ref=f9e444]:
+            - link "Settings" [ref=f9e445] [cursor=pointer]:
+              - /url: https://devpost.com/settings
+      - navigation [ref=f9e447]:
+        - heading "Connect" [level=4] [ref=f9e448]
+        - list [ref=f9e449]:
+          - listitem [ref=f9e450]:
+            - link [ref=f9e451] [cursor=pointer]:
+              - /url: https://twitter.com/devpost
+              - generic [aria-hidden] [ref=f9e453]: 
+              - text: Twitter
+          - listitem [ref=f9e454]:
+            - link [ref=f9e455] [cursor=pointer]:
+              - /url: https://discord.com/invite/HP4BhW3hnp
+              - generic [aria-hidden] [ref=f9e457]: 
+              - text: Discord
+          - listitem [ref=f9e458]:
+            - link [ref=f9e459] [cursor=pointer]:
+              - /url: https://www.facebook.com/devposthacks
+              - generic [aria-hidden] [ref=f9e461]: 
+              - text: Facebook
+          - listitem [ref=f9e462]:
+            - link [ref=f9e463] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/devpost/
+              - generic [aria-hidden] [ref=f9e465]: 
+              - text: LinkedIn
+    - navigation [ref=f9e467]:
+      - generic [ref=f9e469]:
+        - generic [ref=f9e470]: © 2026 Devpost, Inc. All rights reserved.
+        - list [ref=f9e471]:
+          - listitem [ref=f9e472]:
+            - link "Community guidelines" [ref=f9e473] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/community-guidelines
+          - listitem [ref=f9e474]:
+            - link "Security" [ref=f9e475] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/security
+          - listitem [ref=f9e476]:
+            - link "CA notice" [ref=f9e477] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/california-consumer-privacy-act
+          - listitem [ref=f9e478]:
+            - link "Privacy policy" [ref=f9e479] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/privacy-policy
+          - listitem [ref=f9e480]:
+            - link "Terms of service" [ref=f9e481] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/terms-of-service

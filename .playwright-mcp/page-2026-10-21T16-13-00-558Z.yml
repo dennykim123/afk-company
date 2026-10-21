@@ -1,0 +1,211 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - text:                   
+    - navigation [ref=f5e4]:
+      - list [ref=f5e5]:
+        - listitem [ref=f5e6]:
+          - link [ref=f5e8] [cursor=pointer]:
+            - /url: https://devpost.com
+            - img "Devpost" [ref=f5e9]
+      - generic:
+        - list [ref=f5e10]:
+          - listitem [ref=f5e11]
+          - listitem [ref=f5e12]:
+            - link "Join a hackathon" [ref=f5e13] [cursor=pointer]:
+              - /url: "#"
+              - text: Join a hackathon
+              - generic [aria-hidden] [ref=f5e14]: 
+              - text: 
+            - text:   
+          - listitem [ref=f5e15]
+          - listitem [ref=f5e16]:
+            - link "Host a hackathon" [ref=f5e17] [cursor=pointer]:
+              - /url: "#"
+              - text: Host a hackathon
+              - generic [aria-hidden] [ref=f5e18]: 
+              - text: 
+            - text:      
+          - listitem [ref=f5e19]
+          - listitem [ref=f5e20]:
+            - link "Resources" [ref=f5e21] [cursor=pointer]:
+              - /url: "#"
+              - text: Resources
+              - generic [aria-hidden] [ref=f5e22]: 
+              - text: 
+        - generic [ref=f5e23]:
+          - list:
+            - listitem [ref=f5e24]:
+              - generic [aria-hidden] [ref=f5e26]: 
+            - text:  
+          - list:
+            - listitem [ref=f5e27]:
+              - link "Log in" [ref=f5e28] [cursor=pointer]:
+                - /url: https://secure.devpost.com/users/login?ref=top-nav-login
+            - listitem [ref=f5e29]:
+              - link "Sign up" [ref=f5e30] [cursor=pointer]:
+                - /url: https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button
+  - generic [ref=f5e35]:
+    - heading [level=3] [ref=f5e36]:
+      - link "Arbiter Hacks V1" [ref=f5e37] [cursor=pointer]:
+        - /url: https://arbiter-hacks-v1.devpost.com/
+    - generic [ref=f5e39]:
+      - text: "Deadline: 2026년 12월 21일 @ 2:00pm"
+      - link "GMT+9" [ref=f5e40] [cursor=pointer]:
+        - /url: https://devpost.com/settings/preferences_and_eligibility#eligibility-section
+        - text: GMT+9
+        - generic [aria-hidden] [ref=f5e41]: 
+    - link "Join hackathon" [ref=f5e43] [cursor=pointer]:
+      - /url: https://arbiter-hacks-v1.devpost.com/register?flow%5Bdata%5D%5Bchallenge_id%5D=30789&flow%5Bname%5D=register_for_challenge
+  - banner [ref=f5e44]:
+    - heading [level=1] [ref=f5e47]:
+      - link [ref=f5e48] [cursor=pointer]:
+        - /url: https://arbiter-hacks-v1.devpost.com/
+        - img "Arbiter Hacks V1" [ref=f5e49]
+    - navigation [ref=f5e53]:
+      - list [ref=f5e54]:
+        - listitem [ref=f5e55]:
+          - link "Overview" [ref=f5e56] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/
+        - listitem [ref=f5e57]:
+          - link "My projects" [ref=f5e58] [cursor=pointer]:
+            - /url: https://devpost.com/submit-to/30789-arbiter-hacks-v1/manage/submissions
+        - listitem [ref=f5e59]:
+          - link "Participants (425)" [ref=f5e60] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/participants
+        - listitem [ref=f5e61]:
+          - link "Rules" [ref=f5e62] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/rules
+        - listitem [ref=f5e63]:
+          - link "Project gallery" [ref=f5e64] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/project-gallery
+        - listitem [ref=f5e65]:
+          - link "Updates" [ref=f5e66] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/updates
+        - listitem [ref=f5e67]:
+          - link "Discussions" [ref=f5e68] [cursor=pointer]:
+            - /url: https://arbiter-hacks-v1.devpost.com/forum_topics
+  - main [ref=f5e73]:
+    - paragraph [ref=f5e74]:
+      - strong [ref=f5e75]: Project and Submission Requirements
+    - list [ref=f5e76]:
+      - listitem [ref=f5e77]: One submission per team, to one track only.
+      - listitem [ref=f5e78]: "Team size: [1 to 4]. [Solo entries allowed.]"
+    - paragraph [ref=f5e79]:
+      - strong [ref=f5e80]: Prizes
+    - paragraph [ref=f5e81]:
+      - emphasis [ref=f5e82]: General Track
+    - list [ref=f5e83]:
+      - listitem [ref=f5e84]: "1st: TBD"
+      - listitem [ref=f5e85]: "2nd: TBD"
+      - listitem [ref=f5e86]: "Most Social Impact: TBD"
+      - listitem [ref=f5e87]: "Best Pitch: TBD"
+    - paragraph [ref=f5e88]:
+      - emphasis [ref=f5e89]: Theme Track, Rethinking Waste
+    - list [ref=f5e90]:
+      - listitem [ref=f5e91]: "1st (Theme): TBD"
+      - listitem [ref=f5e92]: "2nd (Theme): TBD"
+      - listitem [ref=f5e93]: "Best ML Usage: TBD"
+      - listitem [ref=f5e94]: "Best Pitch: TBD"
+    - paragraph [ref=f5e95]:
+      - strong [ref=f5e96]: Judging Criteria and Winner Selection
+    - paragraph [ref=f5e97]: Each track is scored by its own rubric.
+    - paragraph [ref=f5e98]:
+      - emphasis [ref=f5e99]: General Track (100 pts)
+    - list [ref=f5e100]:
+      - listitem [ref=f5e101]: "Technical execution: 35"
+      - listitem [ref=f5e102]: "Innovation and originality: 25"
+      - listitem [ref=f5e103]: "Completeness and polish: 25"
+      - listitem [ref=f5e104]: "Presentation and demo clarity: 15"
+    - paragraph [ref=f5e105]:
+      - emphasis [ref=f5e106]: Theme Track (100 pts)
+    - list [ref=f5e107]:
+      - listitem [ref=f5e108]: "Impact on the waste problem: 35"
+      - listitem [ref=f5e109]: "Technical execution: 25"
+      - listitem [ref=f5e110]: "Feasibility (could this actually be deployed?): 20"
+      - listitem [ref=f5e111]: "Presentation and demo clarity: 20"
+  - contentinfo [ref=f5e112]:
+    - generic [ref=f5e113]:
+      - navigation [ref=f5e115]:
+        - heading "Devpost" [level=4] [ref=f5e116]
+        - list [ref=f5e117]:
+          - listitem [ref=f5e118]:
+            - link "About" [ref=f5e119] [cursor=pointer]:
+              - /url: https://info.devpost.com/about
+          - listitem [ref=f5e120]:
+            - link "Careers" [ref=f5e121] [cursor=pointer]:
+              - /url: https://info.devpost.com/careers
+          - listitem [ref=f5e122]:
+            - link "Contact" [ref=f5e123] [cursor=pointer]:
+              - /url: https://info.devpost.com/contact
+          - listitem [ref=f5e124]:
+            - link "Help" [ref=f5e125] [cursor=pointer]:
+              - /url: https://help.devpost.com/
+      - navigation [ref=f5e127]:
+        - heading "Hackathons" [level=4] [ref=f5e128]
+        - list [ref=f5e129]:
+          - listitem [ref=f5e130]:
+            - link "Browse hackathons" [ref=f5e131] [cursor=pointer]:
+              - /url: https://devpost.com/hackathons
+          - listitem [ref=f5e132]:
+            - link "Explore projects" [ref=f5e133] [cursor=pointer]:
+              - /url: https://devpost.com/software
+          - listitem [ref=f5e134]:
+            - link "Host a hackathon" [ref=f5e135] [cursor=pointer]:
+              - /url: https://info.devpost.com
+          - listitem [ref=f5e136]:
+            - link "Hackathon guides" [ref=f5e137] [cursor=pointer]:
+              - /url: https://info.devpost.com/guides
+      - navigation [ref=f5e139]:
+        - heading "Portfolio" [level=4] [ref=f5e140]
+        - list [ref=f5e141]:
+          - listitem [ref=f5e142]:
+            - link "Your projects" [ref=f5e143] [cursor=pointer]:
+              - /url: https://devpost.com/portfolio/redirect?page=projects
+          - listitem [ref=f5e144]:
+            - link "Your hackathons" [ref=f5e145] [cursor=pointer]:
+              - /url: https://devpost.com/portfolio/redirect?page=hackathons
+          - listitem [ref=f5e146]:
+            - link "Settings" [ref=f5e147] [cursor=pointer]:
+              - /url: https://devpost.com/settings
+      - navigation [ref=f5e149]:
+        - heading "Connect" [level=4] [ref=f5e150]
+        - list [ref=f5e151]:
+          - listitem [ref=f5e152]:
+            - link [ref=f5e153] [cursor=pointer]:
+              - /url: https://twitter.com/devpost
+              - generic [aria-hidden] [ref=f5e155]: 
+              - text: Twitter
+          - listitem [ref=f5e156]:
+            - link [ref=f5e157] [cursor=pointer]:
+              - /url: https://discord.com/invite/HP4BhW3hnp
+              - generic [aria-hidden] [ref=f5e159]: 
+              - text: Discord
+          - listitem [ref=f5e160]:
+            - link [ref=f5e161] [cursor=pointer]:
+              - /url: https://www.facebook.com/devposthacks
+              - generic [aria-hidden] [ref=f5e163]: 
+              - text: Facebook
+          - listitem [ref=f5e164]:
+            - link [ref=f5e165] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/devpost/
+              - generic [aria-hidden] [ref=f5e167]: 
+              - text: LinkedIn
+    - navigation [ref=f5e169]:
+      - generic [ref=f5e171]:
+        - generic [ref=f5e172]: © 2026 Devpost, Inc. All rights reserved.
+        - list [ref=f5e173]:
+          - listitem [ref=f5e174]:
+            - link "Community guidelines" [ref=f5e175] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/community-guidelines
+          - listitem [ref=f5e176]:
+            - link "Security" [ref=f5e177] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/security
+          - listitem [ref=f5e178]:
+            - link "CA notice" [ref=f5e179] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/california-consumer-privacy-act
+          - listitem [ref=f5e180]:
+            - link "Privacy policy" [ref=f5e181] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/privacy-policy
+          - listitem [ref=f5e182]:
+            - link "Terms of service" [ref=f5e183] [cursor=pointer]:
+              - /url: https://info.devpost.com/legal/terms-of-service
